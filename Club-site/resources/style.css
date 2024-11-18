@@ -1,0 +1,319 @@
+html {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #B3E6B5;
+    margin: 0;
+}
+
+p{
+    font-size: 1.25rem;
+    line-height: 2.25rem;
+}
+
+h2{
+    text-align: center;
+    font-size: 2rem;
+}
+
+@media  screen and (max-width:390px) {
+    h1, h2, h3, h4, p{
+        font-size: 1rem;
+        text-align: center;
+    }
+
+   }
+
+/* header */
+
+header{
+    width: 100%;
+    height: auto;
+    border-bottom: 2px double black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+header a{
+    text-decoration: none;
+}
+
+#home-button{
+    width: 3rem;
+    margin-left: 1rem;
+}
+
+ul{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 1rem;
+}
+
+li{
+    display: flex;
+}
+
+li a{
+    padding: 1rem;
+    justify-content: flex-end;
+}
+
+@media  screen and (max-width:390px) {
+    h1, h2, h3, h4, p{
+        font-size: 1rem;
+    }
+
+    header{
+        width: 100%;
+    }
+    
+    header a{
+        display: none;
+     }
+
+     header h2{
+        width: 100%;
+        text-align: center;
+     }
+   
+   }
+
+
+/* title */
+
+.banner{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: auto;
+    padding: 5rem 0;
+}
+
+.banner h1{
+    align-self: center;
+    font-size: 3rem;
+}
+
+.banner img{
+    border-radius: 50%;
+    background-color: #B3E6B5;
+    height: 15rem;
+}
+
+@media  screen and (max-width:390px){
+ .banner img{
+    display: none;
+ }   
+
+ .banner h1{
+    display: none;
+ }
+
+ .banner{
+    padding: 0;
+ }
+
+}
+
+@media screen and (min-width:391px) {
+    #mobile-heading{
+        display: none;
+    }
+}
+
+/* about us section */
+
+.about{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 5rem;
+}
+
+
+.about p{
+    margin: 0 5rem;
+}
+
+/* facilities section */
+
+.facilities{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding-bottom: 5rem;
+}
+
+
+.facilities p{
+    text-align: center;
+    margin:  0 5rem;
+    padding-bottom: 2.5rem;
+}
+
+.facilities h3{
+    font-size: 1.25rem;
+    margin: 0 5rem;
+    padding-bottom: 1rem;
+}
+
+.location{
+    display: flex;
+  align-items: center;
+  margin: 0 5rem;
+  padding-bottom: 5rem;
+}
+
+.location img{
+    width: 15rem;
+    height: 15rem;
+    padding-right: 1rem ;
+}
+
+.location h4{
+    font-size: 1.125rem;
+}
+
+@media  screen and (max-width:390px) {
+    .location img{
+       display: none;
+    }  
+
+    .facilities h3, .location h4{
+        text-align: center;
+    }
+
+    .facilities{
+        padding: 0;
+    }
+}
+
+/* gallery */
+
+
+.gallery{
+    width: 100%;
+}
+
+.photo-reel{
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.photo{
+    width: 15rem;
+    height: 15rem;
+    border: solid 2px white;
+    padding: 2rem;
+    margin-top: 1rem;
+}
+
+.mobile-photo{
+    display: none;
+}
+
+@media  screen and (max-width:390px) {
+
+    .gallery {
+        width: 100%;
+        padding-bottom: 2.5rem;
+    }
+    .photo{
+       display: none;
+    }  
+
+    #mobile-photo{
+        border: 2px solid white;
+        justify-self: center;
+        width: 7.5rem;
+        height: 7.5rem;
+        text-align: center;
+        margin: auto;
+    }
+
+    .photo-reel{
+        width: 50%;
+        height: auto;
+        margin: auto;
+        display: flex;
+    }
+}
+
+@media  screen and (min-width:391px){
+    #mobile-photo{
+        display: none;
+    }
+}
+
+/* membership section */
+
+.membership{
+    width: 100%;
+    padding: 5rem 0rem;
+}
+
+table{
+    padding: 1rem 0;
+    margin: 0 5rem;
+}
+
+table, th, td{
+    border: 4px solid white;
+   border-collapse: collapse;
+   padding: 0.25rem;
+}
+
+th{
+    background-color: lightgray;
+}
+
+@media  screen and (max-width:390px) {
+    .membership{
+        margin: 0;
+        padding: 0;
+      text-align: center;
+    }
+
+    .description{
+        display: none;
+    }
+
+    .mobile-footer{
+        line-height: normal;
+        padding-bottom: 1.5rem;
+    }
+}
+
+@media  screen and (min-width:390px) {
+    .mobile-footer{
+        display: none;
+    }
+}
+
+/* contact us */
+
+.contact{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5rem;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+}
+
+@media  screen and (max-width:390px) and (max-height:844px) {
+    .contact{
+        margin: 0;
+        padding: 0;
+      text-align: center;
+    }
+}
+
+footer{
+    font-weight: bold;
+    border-top: white solid 1px;
+    padding-top: 1rem;
+}
